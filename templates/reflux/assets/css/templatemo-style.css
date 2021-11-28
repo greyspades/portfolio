@@ -13,10 +13,10 @@ body {
 }
 
 #page-wraper {
-    background: url(../images/silver.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
+    background: url(../../../../public/bg4.jpg) no-repeat center fixed;
+    /* -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover; */
     background-size: cover;
     width: 100%;
 }
@@ -145,6 +145,8 @@ html {
 
 .menu .author-content {
     margin: 40px 0px 60px 0px;
+    margin-top: -30px;
+    margin-right: -20px;
 }
 
 .menu .author-content h4 {
@@ -220,41 +222,18 @@ html {
     display: none;
 }
 
-.menu {
-    left: 10%;
-  -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
-  -webkit-overflow-scrolling: touch;
-  /* background-color: #5d5d5d; */
-  box-sizing: border-box;
-  height: 100vh;  
-  max-height: 100vh !important;
-  max-width: 80vw !important;
-  min-width: 45px !important;
-  outline: none;
-  overflow-x: hidden !important;
-  overflow-y: auto !important;
-  padding: 0;
-  position: fixed !important;
-  top: calc(0px);  
-  width: 20%;
-  will-change: transform;
-  z-index: 9999 !important;
-  background-image: url(../../../../public/layered.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 .menu-toggle {
-  color: #fff;
+  /* color: #fff;
   cursor: pointer;
   font-size: 25px;
   position: fixed;
   right: 25px;
-  top: 25px;
+  top: 25px; */
 }
 
 #menu-toggle {
-    z-index: 999;
+    /* z-index: 999;
     cursor: pointer;
     position: fixed;
     top: 0;
@@ -265,7 +244,7 @@ html {
     height: 60px;
     text-align: center;
     display: inline-block;
-    line-height: 60px;
+    line-height: 60px; */
 }
 
 .menu-close {
@@ -273,7 +252,7 @@ html {
 }
 
 #menu-close {
-    cursor: pointer;
+    /* cursor: pointer;
     text-align: right;
     color: #a43f49;
     background-color: #fff;
@@ -281,7 +260,7 @@ html {
     height: 60px;
     text-align: center;
     display: inline-block;
-    line-height: 60px;
+    line-height: 60px; */
 }
 
 
@@ -339,7 +318,7 @@ html {
 }
 
 .white-button a:hover {
-    background-color: #a43f49;
+    /* background-color: #a43f49; */
     color: #fff;
 }
 
@@ -347,7 +326,7 @@ button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #fff;
-    color: #a43f49;
+    /* color: #a43f49; */
     font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.5px;
@@ -360,7 +339,7 @@ button {
 
 button:hover {
     outline: none;
-    background-color: #a43f49;
+    /* background-color: #a43f49; */
     color: #fff;
 }
 
@@ -656,9 +635,9 @@ section.contact-me {
 }
 
 @media screen and (max-width: 1680px) {
-    .menu {
+    /* .menu {
         left: 5%;
-    }
+    } */
 
     .section {
         color: #fff;
@@ -686,7 +665,7 @@ section.contact-me {
 
 @media screen and (max-width: 1280px) {
     .menu {
-        left: 0%;
+        /* left: 0%; */
     }
 
     .right-image-post h4,
@@ -712,29 +691,29 @@ section.contact-me {
 }
 
 @media screen and (max-width: 1280px) and (min-width: 846px) {
-    .menu {
+    /* .menu {
         width: 25%;
-    }
+    } */
 }
 
 #menu-toggle,
 #menu-close {
-    display: none;
+    /* display: none; */
 }  
 
 @media screen and (max-width: 845px) {        
     #menu-toggle,
     #menu-close {
-        display: inline-block;
+        /* display: inline-block; */
     }    
 
     .menu {        
-        width: 320px;
+        /* width: 320px;
         -webkit-transform: translateX(-100%) !important;
         transform: translateX(-100%) !important;
         transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
         transition: transform 233ms cubic-bezier(0, 0, 0.21, 1);
-        transition: transform 233ms cubic-bezier(0, 0, 0.21, 1), -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+        transition: transform 233ms cubic-bezier(0, 0, 0.21, 1), -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1); */
     }
 
     .menu .image {
@@ -756,9 +735,9 @@ section.contact-me {
     }
 
     .menu.open {
-        display: inline-block;
+        /* display: inline-block;
         -webkit-transform: translateX(0) !important;
-                transform: translateX(0) !important;
+                transform: translateX(0) !important; */
     }
 
     .responsive-nav {

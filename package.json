@@ -8,11 +8,15 @@
       "start": "next start"
    },
    "dependencies": {
+      "@emotion/react": "^11.6.0",
+      "@emotion/styled": "^11.6.0",
       "@material-ui/core": "^4.11.4",
       "@material-ui/icons": "^4.11.2",
       "@material-ui/lab": "^4.0.0-alpha.60",
       "@material/react-drawer": "^0.15.0",
       "@material/react-top-app-bar": "^0.15.0",
+      "@mui/material": "^5.2.1",
+      "@react-three/fiber": "^7.0.19",
       "@zeit/next-css": "^1.0.1",
       "@zeit/next-sass": "^1.0.1",
       "animejs": "^3.2.1",
@@ -21,6 +25,7 @@
       "cookie": "^0.4.1",
       "formik": "^2.2.9",
       "framer-motion": "^4.1.17",
+      "jquery": "^3.6.0",
       "js-cookie": "^2.2.1",
       "mongoose": "^5.13.2",
       "mongoose-type-email": "^1.1.2",
@@ -31,6 +36,7 @@
       "rc-drawer": "^4.4.0",
       "rc-footer": "^0.6.6",
       "rc-table": "^7.17.0",
+      "rc-tabs": "^11.10.3",
       "react": "17.0.1",
       "react-anime": "^4.1.1",
       "react-animejs": "^0.5.6",
@@ -38,10 +44,13 @@
       "react-responsive-carousel": "^3.2.21",
       "react-reveal": "^1.2.2",
       "react-spinners": "^0.11.0",
+      "react-swipeable-views": "^0.14.0",
+      "react-tabs": "^3.2.3",
       "react-tsparticles": "^1.33.3",
       "react-wavify": "^1.5.4",
       "react-waypoint": "^10.1.0",
       "rive-react": "0.0.26",
+      "three": "^0.134.0",
       "webpack": "^5.56.0"
    }
 }
