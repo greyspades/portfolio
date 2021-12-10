@@ -113,7 +113,7 @@ html {
 }
 
 .main-nav li a {
-    height: 70px;
+    height: 60px;
     line-height: 70px;
     display: inline-block;
     font-size: 16px;
@@ -127,7 +127,7 @@ html {
 
 .main-nav li:hover a,
 .main-nav li.active a {
-    background: rgba(255,255,255,0.5);
+    background: white;
     color: #8c363e;
 }
 

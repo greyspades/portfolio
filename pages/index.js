@@ -192,6 +192,7 @@ https://templatemo.com/tm-531-reflux
     <i className="fa fa-bars" id="menu-toggl" />
     <div id="menu" style={{borderRight:'7px solid #8c363e',backgroundColor:'rgb(101,101,106)', }} className="menu side-menu">
       
+      <div className='side-menu-body'>
       <div style={{}} className="containe side-menu-items">
         <Grid container justify='center' direction='row'>
 
@@ -220,6 +221,7 @@ https://templatemo.com/tm-531-reflux
        
       </div>
       <RiveComponent className='side-rive' />
+      </div>
     </div>
     
   </div>

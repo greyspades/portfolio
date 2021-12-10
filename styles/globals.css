@@ -419,6 +419,9 @@ background-repeat: no-repeat;
 
 @media all and (min-width:800px){
 
+  .side-menu-body {
+    margin-top: 50px;
+  }
   .service-paper {
     box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     z-index: 100;
