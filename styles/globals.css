@@ -501,7 +501,7 @@ background-repeat: no-repeat;
   }
 
   .appbar {
-    margin-left: 270px;
+    /* margin-left: 270px; */
     width: 80%;
   }
 

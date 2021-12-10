@@ -145,7 +145,7 @@ https://templatemo.com/tm-531-reflux
   
 {/* <SideDrawer about={aboutScroll} work={workScroll} service={serviceRef} contact={contactRef} show={show} /> */}
 
-<div style={{width:'100%'}} className='containe main-appba '>
+<div style={{}} className='containe main-appba '>
   <Box  sx={{ }}>
       <AppBar className='appbar' style={{height:50,backgroundColor:"rgb(101,101,106)",zIndex:2000}} position="fixed">
         <Toolbar style={{height:50}}>
