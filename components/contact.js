@@ -61,6 +61,7 @@ const Contact = () => {
                             <FormControl>
                                   <Grid container justifyContent='center'>
                                 <Input
+                                disableUnderline={true}
                             className='mail-input'
                             placeholder='your name'
                             type='text'
@@ -72,7 +73,7 @@ const Contact = () => {
 
                                 <Grid container justifyContent='center'>
                                 <Input
-                                
+                                disableUnderline={true}
                             className='mail-input'
                             placeholder='your Email address'
                             type='email'
@@ -87,10 +88,11 @@ const Contact = () => {
                             className='mail-input'
                             placeholder='message'
                             multiline={true}
-                            variant='outlined'
+                            variant='standard'
                             id="outlined-multiline-static"
                             type='text'
                             minRows={8}
+                            
                             value={values.message}
                             onChange={handleChange('message')}
                             startAdornment={<Mail style={{color:'#c62368'}} />}

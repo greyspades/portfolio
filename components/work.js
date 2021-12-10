@@ -382,10 +382,10 @@ export default function FullWidthTabs() {
         <TabPanel value={value} index={1} dir={theme.direction}>
          <Grid style={{}} container justifyContent='center' direction='row'>
               <Grid container justifyContent='center' xs={12} md={6}>
-              <div className='service-paper work-paper'>
+              <div className='service-pape work-paper'>
                       <Grid container direction='row'>
                           <Grid container xs={6} md={6}>
-                          <motion.div whileHover={{scale:1.7}}  className='work-imag'>
+                          <motion.div whileHover={{scale:1.4}}  className='work-imag'>
                       <Image className='work-image' width={150} height={250} src='/flicker.jpg' layout='intrinsic' />
                       </motion.div>
                           </Grid>

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-
+import Github from '@material-ui/icons/GitHub'
 import Front from '../components/front'
 import Services from '../components/services'
 
@@ -20,7 +20,7 @@ import Contact from '../components/contact.js'
 import {useRive} from 'rive-react'
 import me from '../public/me2.png'
 import Image from 'next/image'
-import { Drawer } from '@mui/material'
+import { Drawer} from '@mui/material'
 
 import  {
   
@@ -160,7 +160,7 @@ https://templatemo.com/tm-531-reflux
             sx={{ mr: 2 }}
             onClick={toggleDrawer}
           >
-            <MenuIcon />
+            <MenuIcon style={{}} />
           </IconButton>
           :
           null
@@ -172,7 +172,9 @@ https://templatemo.com/tm-531-reflux
           <p className='app-bar-title' style={{display:'flex'}}>
             Chidera C. Nadoma
           </p>
-          <Button style={{marginLeft:'auto'}} onClick={contactScroll} color="inherit"><p style={{}}>Contact</p></Button>
+          <IconButton style={{marginLeft:'auto'}} onClick={contactScroll} color="inherit">
+            <Github style={{width:30,height:30,color:'white',marginTop:-10}} />
+            </IconButton>
         </Toolbar>
       </AppBar>
     </Box>
@@ -190,7 +192,7 @@ https://templatemo.com/tm-531-reflux
             <DrawerContent className='main-drawer'>
             <div className="responsive-nav">
     <i className="fa fa-bars" id="menu-toggl" />
-    <div id="menu" style={{borderRight:'7px solid #8c363e',backgroundColor:'rgb(101,101,106)', }} className="menu side-menu">
+    <div id="menu" style={{borderRight:'7px solid #8c363e',backgroundColor:'rgba(101,101,106)', }} className="menu side-menu">
       
       <div className='side-menu-body'>
       <div style={{}} className="containe side-menu-items">
@@ -209,10 +211,10 @@ https://templatemo.com/tm-531-reflux
         </Grid>
         <nav style={{zIndex:1200,marginTop:-40}} className="main-nav" role="navigation">
           <ul className="main-menu">
-            <li><a onClick={aboutScroll} href="#section1">About Me</a></li>
-            <li><a onClick={serviceScroll} href="#section2">What I’m good at</a></li>
-            <li><a onClick={workScroll} href="#section3">My Work</a></li>
-            <li><a onClick={contactScroll} href="#section4">Contact Me</a></li>
+            <li><a onClick={aboutScroll} href="#section1">About me</a></li>
+            <li><a onClick={serviceScroll} href="#section2">What i’m good at</a></li>
+            <li><a onClick={workScroll} href="#section3">My work</a></li>
+            <li><a onClick={contactScroll} href="#section4">Contact me</a></li>
           </ul>
           
         </nav>
