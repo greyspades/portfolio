@@ -1,37 +1,50 @@
 import React,{useState,useEffect} from 'react'
 import Image from 'next/image'
-import {Grid,Paper,Button} from '@material-ui/core'
-import greyscale from '../public/grey.jpeg'
+import {Grid,Paper,Button,Divider} from '@mui/material'
 
+import Rive, {useRive} from 'rive-react'
+//import { motion } from 'framer-motion'
 
 
 const Front = () => {
+
+  const params = {
+    src: '/yinyang.riv',
+    autoplay: true,
+    
+  };
+
+  const { RiveComponent, rive } = useRive(params);
+  
+
     return (
-        <div>
-            <Grid>
-            <Paper className='intro-paper' style={{backgroundColor:'#8c363e'}} elevation={20}>
-               {/* <Image layout='intrinsic' width={460} height={325} src={greyscale}  /> */}
-                <Grid style={{padding:10}} container>
-                    <h2 style={{fontSize:70,fontWeight:'bolder',color:'white',marginLeft:20}}>
-                      Greysoft
-                    </h2>
-                </Grid>
-                <Grid style={{padding:30,}} container justify='center'>
-                  <h4 style={{marginTop:-80,fontSize:30}}>
-                    Where your ideas take the stage
-                  </h4>
-                </Grid>
-            </Paper>
+        <div style={{}} className='containe'>
+            <Grid style={{}} className='front' container justifyContent='center' direction='row'>
+              <Grid container justifyContent='center' xs={12} md={6}>
+                <div style={{}} className='yin-container'>
+                 <RiveComponent  className='yin-yang' style={{}} />
+                 {/* <div className='me-icon' /> */}
+                </div>
+
+              </Grid>
+
+              <Grid container justifyContent='center' xs={12} md={6}>
+                  <div className='main-header'>
+                  <h1  style={{textAlign:'center',color:'white',fontSize:40}}>
+                Hey i'm Dera, 
+              </h1>
+              <hr className='hr' />
+                  </div>
+              <p className='main-intro' style={{textAlign:'center',color:'white'}}>
+                A full stack developer and UI/UX designer with a nack for 
+                performant and scalable software solutions.<br/>
+                I am goal oriented and an avid learner with a nack for learning and creating something new.
+              </p>
+              </Grid>
+
+             
             </Grid>
 
-            <div style={{marginTop:-40}} className="section-heading">
-        <h2>About Me</h2>
-        <div className="line-dec" />
-        <span>The thinest line between professionalism work ethic and product quality is redefined by what i do, its about the impact the product has on the word, and my goal is to make your idea soar higher than it ought to.</span>
-      </div>
-
-
-            
         </div>
     )
 }

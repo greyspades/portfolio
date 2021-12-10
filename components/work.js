@@ -71,11 +71,11 @@ export default function FullWidthTabs() {
       <h2 className='work-header' style={{textAlign:'center'}}>
         My Work
       </h2>
-      <div style={{textAlign:'center'}}>
+      {/* <div style={{textAlign:'center'}}>
         <h4 style={{}}>
           What i have created
         </h4>
-      </div>
+      </div> */}
         <Tabs
           value={value}
           onChange={handleChange}
@@ -100,13 +100,13 @@ export default function FullWidthTabs() {
             <Grid style={{}} xs={12} md={4} justifyContent='center' container>
               <div style={{}} className='service-paper work-paper' >
               <Grid container justifyContent='center'>
-                      <motion.div whileHover={{scale:1.7}}  className='work-imag'>
-                      <Image width={300} height={150} src='/winster.jpg' layout='intrinsic' />
+                      <motion.div style={{borderRadius:10}} whileHover={{scale:1.5}}  className='work-imag'>
+                      <Image className='work-image' width={300} height={150} src='/winster.jpg' layout='intrinsic' />
                       </motion.div>
                 </Grid>
 
 
-              <div >
+              <div className='work-card-body' >
               <div style={{padding:10,marginTop:-20}}>
               <p style={{fontSize:14}}>
                 Crypto exchange platform
@@ -146,7 +146,7 @@ export default function FullWidthTabs() {
                     </Grid>
               </Grid>
 
-              <Divider variant='inset' style={{height:2,backgroundColor:'rgba(255,255,255,0.2)',marginTop:-3}} />
+              <Divider variant='fullWidth' style={{height:2,backgroundColor:'rgba(255,255,255,0.2)',marginTop:-3}} />
               
               <Grid style={{marginTop:10}} container direction='row'>
                 <Grid container xs={3} md={3} style={{margin:10}} >
@@ -165,7 +165,7 @@ export default function FullWidthTabs() {
                 </Grid>
               </Grid>
 
-              <Divider variant='inset' style={{height:2,backgroundColor:'rgba(255,255,255,0.2)',marginTop:4}} />
+              <Divider variant='fullWidth' style={{height:2,backgroundColor:'rgba(255,255,255,0.2)',marginTop:4}} />
 
               <Grid container direction='row'>
                 <Grid container xs={3} md={3} style={{margin:10}} >
@@ -196,8 +196,8 @@ export default function FullWidthTabs() {
             <Grid style={{}} xs={12} md={4} justifyContent='center' container>
               <div style={{}} className='service-paper work-paper' >
               <Grid container justifyContent='center'>
-                      <motion.div whileHover={{scale:1.7}}  className='work-imag'>
-                      <Image width={300} height={150} src='/capital.jpg' layout='intrinsic' />
+                      <motion.div whileHover={{scale:1.5}}  className='work-imag'>
+                      <Image className='work-image' width={300} height={150} src='/capital.jpg' layout='intrinsic' />
                       </motion.div>
                 </Grid>
 
@@ -236,7 +236,7 @@ export default function FullWidthTabs() {
                     </Grid>
               </Grid>
 
-              <Divider variant='inset' style={{height:2,backgroundColor:'rgba(255,255,255,0.2)',marginTop:-3}} />
+              <Divider variant='fullWidth' style={{height:2,backgroundColor:'rgba(255,255,255,0.2)',marginTop:-3}} />
               
               <Grid style={{marginTop:10}} container direction='row'>
                 <Grid container xs={3} md={3} style={{margin:10}} >
@@ -255,7 +255,7 @@ export default function FullWidthTabs() {
                 </Grid>
               </Grid>
 
-              <Divider variant='inset' style={{height:2,backgroundColor:'rgba(255,255,255,0.2)',marginTop:4}} />
+              <Divider variant='fullWidth' style={{height:2,backgroundColor:'rgba(255,255,255,0.2)',marginTop:4,width:'100%'}} />
 
               <Grid container direction='row'>
                 <Grid container xs={3} md={3} style={{margin:10}} >
@@ -281,10 +281,10 @@ export default function FullWidthTabs() {
             
             
             <Grid style={{}} xs={12} md={4} justifyContent='center' container>
-              <div style={{backgroundColor:'rgba(255,255,255,0.1)'}} className='service-paper work-paper' >
+              <div style={{}} className='service-paper work-paper' >
               <Grid container justifyContent='center'>
-                      <motion.div whileHover={{scale:1.7}}  className='work-imag'>
-                      <Image width={300} height={150} src='/dash.jpg' layout='intrinsic' />
+                      <motion.div whileHover={{scale:1.5}}  className='work-imag'>
+                      <Image className='work-image' width={300} height={150} src='/dash.jpg' layout='intrinsic' />
                       </motion.div>
                 </Grid>
 
@@ -329,7 +329,7 @@ export default function FullWidthTabs() {
                     </Grid>
               </Grid>
 
-              <Divider variant='inset' style={{height:2,backgroundColor:'rgba(255,255,255,0.2)',marginTop:-3}} />
+              <Divider variant='fullWidth' style={{height:2,backgroundColor:'rgba(255,255,255,0.2)',marginTop:-3}} />
               
               <Grid style={{marginTop:10}} container direction='row'>
                 <Grid container xs={3} md={3} style={{margin:10}} >
@@ -348,7 +348,7 @@ export default function FullWidthTabs() {
                 </Grid>
               </Grid>
 
-              <Divider variant='inset' style={{height:2,backgroundColor:'rgba(255,255,255,0.2)',marginTop:4}} />
+              <Divider variant='fullWidth' style={{height:2,backgroundColor:'rgba(255,255,255,0.2)',marginTop:4}} />
 
               <Grid container direction='row'>
                 <Grid container xs={3} md={3} style={{margin:10}} >
@@ -386,7 +386,7 @@ export default function FullWidthTabs() {
                       <Grid container direction='row'>
                           <Grid container xs={6} md={6}>
                           <motion.div whileHover={{scale:1.7}}  className='work-imag'>
-                      <Image width={150} height={250} src='/flicker.jpg' layout='intrinsic' />
+                      <Image className='work-image' width={150} height={250} src='/flicker.jpg' layout='intrinsic' />
                       </motion.div>
                           </Grid>
 
@@ -483,7 +483,7 @@ export default function FullWidthTabs() {
           <Grid container justifyContent='center' direction='row'>
           <Grid justifyContent='center' className='design-grid' container xs={12} md={4}>
                 <div className='service-paper'>
-                <div whileHover={{scale:1.7}}  className='work-imag'>
+                <div whileHover={{scale:1.4}}  className='work-imag'>
                       <Image width={250} height={350} src='/blu.jfif' layout='intrinsic' />
                       </div>
                 </div>

@@ -56,27 +56,27 @@ const PerformanceRive = (props) => {
           }
           else if(!props.mobile){
             iconControls.start({
-              x:300,
+              x:250,
              
               transition: { duration: 1,type: "spring", stiffness: 100,},
             })
             controls1.start({
               x:0,
-              width:300,
+              width:250,
               opacity:1,
               transition: { duration: 0.5,type: "spring", stiffness: 100,},
             })
   
             controls2.start({
               x:0,
-              width:300,
+              width:250,
               opacity:1,
               transition: { duration: 0.5,type: "spring", stiffness: 100,delay:0.1 },
             })
   
             controls3.start({
               x:0,
-              width:300,
+              width:250,
               opacity:1,
               transition: { duration: 0.5,type: "spring", stiffness: 100,delay:0.2 },
             })
@@ -124,7 +124,7 @@ const PerformanceRive = (props) => {
         }
 
     return (
-        <div>
+        <Grid container justifyContent='center'>
                       <div 
            style={{position:'relative'}}
            onMouseEnter={show}
@@ -146,7 +146,7 @@ const PerformanceRive = (props) => {
                  animate={controls1}
                   container alignContent='center' justifyContent='center' className='service-tip'   >
                   <p style={{textAlign:'center',marginTop:-0.01,fontSize:14}}>
-                    Cross platform development
+                    Search Engine Optimization
                   </p>
               </motion.div>
                 </Grid>
@@ -157,7 +157,7 @@ const PerformanceRive = (props) => {
                  animate={controls1}
                   container alignContent='center' justifyContent='center' className='service-tip'   >
                   <p style={{textAlign:'center',marginTop:-0.01,fontSize:14}}>
-                    Cross platform development
+                  Consulting and Debugging 
                   </p>
               </motion.div>
                 </Grid>
@@ -168,7 +168,7 @@ const PerformanceRive = (props) => {
                  animate={controls1}
                   container alignContent='center' justifyContent='center' className='service-tip'   >
                   <p style={{textAlign:'center',marginTop:-0.01,fontSize:14}}>
-                    Cross platform development
+                  Notification and geofencing
                   </p>
               </motion.div>
                 </Grid>
@@ -194,7 +194,7 @@ const PerformanceRive = (props) => {
                 <RiveComponent />
               </div>
           </div>
-        </div>
+        </Grid>
     )
 }
 

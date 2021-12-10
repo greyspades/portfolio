@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import PropTypes from 'prop-types'
 import {Grid,Divider,Button} from '@material-ui/core'
-import Rive, { useRive } from 'rive-react';
+
 import MobileRive from '../components/mobileRive';
 //import wave from '../public/wave.riv'
 import DesignRive from '../components/designRive'
@@ -37,7 +37,7 @@ function Services(props) {
     autoplay: false,
     
   };
-  const { RiveComponent, rive } = useRive(params);
+  //const { RiveComponent, rive } = useRive(params);
   //const { RiveMobile, mobile } = useRive(params);
 
   
@@ -50,7 +50,7 @@ function Services(props) {
 
 <Grid className="section my-service" data-section="sectio">
     <div className="container">
-      <div className="section-heading">
+      <div className="section-heading service-heading">
         <h2>What I’m good at?</h2>
 
         
@@ -80,17 +80,17 @@ function Services(props) {
                     <h4 style={{textAlign:'center'}}>
                     Tools of the Trade
                     </h4>
-                    <div>
+                    {/* <div>
                     <p style={{textAlign:'center',marginBottom:40}}>
                     Technologies and frameworks i work with
                   </p>
-                    </div>
+                    </div> */}
                     </Grid>
 
-                    <Grid item xs={8} md={8}>
+                    <Grid item xs={12} md={8}>
                     <Grid  container justify='center' direction='row'>
 
-                  <Grid xs={4} md={4} container justify='center'>
+                  <Grid style={{}} xs={4} md={2} container justify='center'>
                   <div className='tool-item service-paper' container justifyContent='center' alignContent='center' >
                 <div >
                 <Image src='/react.png' height={40} width={40} layout='intrinsic' />
@@ -104,7 +104,7 @@ function Services(props) {
               </Grid>
                   </Grid>
 
-                  <Grid xs={4} md={4} container justify='center'>
+                  <Grid xs={4} md={2} container justify='center'>
                   <div className='tool-item service-paper' container justifyContent='center' alignContent='center' >
                 <div >
                 <Image src='/next.png' height={40} width={40} layout='intrinsic' />
@@ -118,7 +118,7 @@ function Services(props) {
               </Grid>
                   </Grid>
 
-                  <Grid xs={4} md={4} container justify='center'>
+                  <Grid xs={4} md={2} container justify='center'>
                   <div className='tool-item service-paper' container justifyContent='center' alignContent='center' >
                 <div >
                 <Image src='/node.png' height={40} width={40} layout='intrinsic' />
@@ -131,7 +131,7 @@ function Services(props) {
               </Grid>
                   </Grid>
 
-                  <Grid xs={4} md={4} container justify='center'>
+                  <Grid xs={4} md={2} container justify='center'>
                   <div className='tool-item service-paper' container justifyContent='center' alignContent='center' >
                 <div >
                 <Image src='/graph.png' height={45} width={40} layout='intrinsic' />
@@ -145,7 +145,7 @@ function Services(props) {
               </Grid>
                   </Grid>
 
-                  <Grid xs={4} md={4} container justify='center'>
+                  <Grid xs={4} md={2} container justify='center'>
                   <div className='tool-item service-paper' container justifyContent='center' alignContent='center' >
                 <div >
                 <Image src='/mongo.png' height={40} width={40} layout='intrinsic' />
@@ -159,7 +159,7 @@ function Services(props) {
               </Grid>
                   </Grid>
 
-                  <Grid xs={4} md={4} container justify='center'>
+                  <Grid xs={4} md={2} container justify='center'>
                   <div className='tool-item service-paper' container justifyContent='center' alignContent='center' >
                 <div >
                 <Image src='/flutter.png' height={40} width={40} layout='intrinsic' />
@@ -194,17 +194,13 @@ function Services(props) {
                     <h4 style={{textAlign:'center'}}>
                     What i speak
                     </h4>
-                    <div>
-                    <p style={{textAlign:'center',marginBottom:40}}>
-                    Programming languages i am well versed with
-                  </p>
-                    </div>
+                  
                     </Grid>
 
-                    <Grid item xs={8} md={8}>
+                    <Grid item xs={12} md={8}>
                     <Grid  container justify='center' direction='row'>
 
-                  <Grid xs={4} md={4} container justify='center'>
+                  <Grid xs={4} md={2} container justify='center'>
                   <div className='tool-item service-paper' container justifyContent='center' alignContent='center' >
                 <div >
                 <Image src='/html.png' height={40} width={40} layout='intrinsic' />
@@ -218,7 +214,7 @@ function Services(props) {
               </Grid>
                   </Grid>
 
-                  <Grid xs={4} md={4} container justify='center'>
+                  <Grid xs={4} md={2} container justify='center'>
                   <div className='tool-item service-paper' container justifyContent='center' alignContent='center' >
                 <div >
                 <Image src='/css.png' height={40} width={40} layout='intrinsic' />
@@ -232,7 +228,7 @@ function Services(props) {
               </Grid>
                   </Grid>
 
-                  <Grid xs={4} md={4} container justify='center'>
+                  <Grid xs={4} md={2} container justify='center'>
                   <div className='tool-item service-paper' container justifyContent='center' alignContent='center' >
                 <div >
                 <Image src='/typescript.png' height={40} width={40} layout='intrinsic' />
@@ -246,7 +242,7 @@ function Services(props) {
               </Grid>
                   </Grid>
 
-                  <Grid xs={4} md={4} container justify='center'>
+                  <Grid xs={4} md={2} container justify='center'>
                   <div className='tool-item service-paper' container justifyContent='center' alignContent='center' >
                 <div >
                 <Image src='/python.png' height={40} width={40} layout='intrinsic' />
@@ -260,7 +256,7 @@ function Services(props) {
               </Grid>
                   </Grid>
 
-                  <Grid xs={4} md={4} container justify='center'>
+                  <Grid xs={4} md={2} container justify='center'>
                   <div className='tool-item service-paper' container justifyContent='center' alignContent='center' >
                 <div >
                 <Image src='/java.png' height={60} width={60} layout='intrinsic' />
@@ -274,7 +270,7 @@ function Services(props) {
               </Grid>
                   </Grid>
 
-                  <Grid xs={4} md={4} container justify='center'>
+                  <Grid xs={4} md={2} container justify='center'>
                   <div className='tool-item service-paper' container justifyContent='center' alignContent='center' >
                 <div >
                 <Image src='/dart.png' height={40} width={40} layout='intrinsic' />

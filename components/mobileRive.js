@@ -56,20 +56,20 @@ const MobileRive = (props) => {
           }
           else if(!props.mobile){
             iconControls.start({
-              x:300,
+              x:250,
              
               transition: { duration: 1,type: "spring", stiffness: 100,},
             })
             controls1.start({
               x:0,
-              width:300,
+              width:250,
               opacity:1,
               transition: { duration: 0.5,type: "spring", stiffness: 100,},
             })
   
             controls2.start({
               x:0,
-              width:300,
+              width:250,
               opacity:1,
               transition: { duration: 0.5,type: "spring", stiffness: 100,delay:0.1 },
             })
@@ -124,7 +124,7 @@ const MobileRive = (props) => {
         }
 
     return (
-        <div>
+        <Grid container justifyContent='center'>
                       <div 
            style={{position:'relative'}}
            onMouseEnter={show}
@@ -146,7 +146,7 @@ const MobileRive = (props) => {
                  animate={controls1}
                   container alignContent='center' justifyContent='center' className='service-tip'   >
                   <p style={{textAlign:'center',marginTop:-0.01,fontSize:14}}>
-                    Cross platform development
+                    cross platform Mobile Apps
                   </p>
               </motion.div>
                 </Grid>
@@ -157,7 +157,7 @@ const MobileRive = (props) => {
                  animate={controls1}
                   container alignContent='center' justifyContent='center' className='service-tip'   >
                   <p style={{textAlign:'center',marginTop:-0.01,fontSize:14}}>
-                    Cross platform development
+                  Mobile app porting
                   </p>
               </motion.div>
                 </Grid>
@@ -168,7 +168,7 @@ const MobileRive = (props) => {
                  animate={controls1}
                   container alignContent='center' justifyContent='center' className='service-tip'   >
                   <p style={{textAlign:'center',marginTop:-0.01,fontSize:14}}>
-                    Cross platform development
+                    Wearables And Embedded Software
                   </p>
               </motion.div>
                 </Grid>
@@ -194,7 +194,7 @@ const MobileRive = (props) => {
                 <RiveComponent />
               </div>
           </div>
-        </div>
+        </Grid>
     )
 }
 

@@ -13,6 +13,10 @@ const WebRive = (props) => {
    const controls3=useAnimation()
    const iconControls=useAnimation()
 
+   useEffect(()=>{
+      console.log(`device is ${props.mobile}`)
+   },[])
+
 
     const params = {
         src: '/wave.riv',
@@ -29,54 +33,54 @@ const WebRive = (props) => {
 
           if(props.mobile){
             iconControls.start({
-              x:230,
+              x:220,
              
               transition: { duration: 1,type: "spring", stiffness: 100,},
             })
             controls1.start({
               x:0,
-              width:250,
+              width:220,
               opacity:1,
               transition: { duration: 0.5,type: "spring", stiffness: 100,},
             })
   
             controls2.start({
               x:0,
-              width:250,
+              width:220,
               opacity:1,
               transition: { duration: 0.5,type: "spring", stiffness: 100,delay:0.1 },
             })
   
             controls3.start({
               x:0,
-              width:250,
+              width:220,
               opacity:1,
               transition: { duration: 0.5,type: "spring", stiffness: 100,delay:0.2 },
             })
           }
           else if(!props.mobile){
             iconControls.start({
-              x:300,
+              x:250,
              
               transition: { duration: 1,type: "spring", stiffness: 100,},
             })
             controls1.start({
               x:0,
-              width:300,
+              width:250,
               opacity:1,
               transition: { duration: 0.5,type: "spring", stiffness: 100,},
             })
   
             controls2.start({
               x:0,
-              width:300,
+              width:250,
               opacity:1,
               transition: { duration: 0.5,type: "spring", stiffness: 100,delay:0.1 },
             })
   
             controls3.start({
               x:0,
-              width:300,
+              width:250,
               opacity:1,
               transition: { duration: 0.5,type: "spring", stiffness: 100,delay:0.2 },
             })
@@ -124,7 +128,7 @@ const WebRive = (props) => {
         }
 
     return (
-        <div>
+        <Grid container justifyContent='center'>
                       <div 
            style={{position:'relative'}}
            onMouseEnter={show}
@@ -146,7 +150,7 @@ const WebRive = (props) => {
                  animate={controls1}
                   container alignContent='center' justifyContent='center' className='service-tip'   >
                   <p style={{textAlign:'center',marginTop:-0.01,fontSize:14}}>
-                    Cross platform development
+                    Responsive Websites
                   </p>
               </motion.div>
                 </Grid>
@@ -157,7 +161,7 @@ const WebRive = (props) => {
                  animate={controls1}
                   container alignContent='center' justifyContent='center' className='service-tip'   >
                   <p style={{textAlign:'center',marginTop:-0.01,fontSize:14}}>
-                    Cross platform development
+                    Performant Web apps
                   </p>
               </motion.div>
                 </Grid>
@@ -168,7 +172,7 @@ const WebRive = (props) => {
                  animate={controls1}
                   container alignContent='center' justifyContent='center' className='service-tip'   >
                   <p style={{textAlign:'center',marginTop:-0.01,fontSize:14}}>
-                    Cross platform development
+                    E-commerce Solutions
                   </p>
               </motion.div>
                 </Grid>
@@ -194,7 +198,7 @@ const WebRive = (props) => {
                 <RiveComponent />
               </div>
           </div>
-        </div>
+        </Grid>
     )
 }
 
