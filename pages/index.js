@@ -147,7 +147,7 @@ https://templatemo.com/tm-531-reflux
 
 <div style={{}} className='containe main-appba '>
   <Box  sx={{ }}>
-      <AppBar className='appbar' style={{height:50,backgroundColor:"rgb(101,101,106)",zIndex:2000}} position="fixed">
+      <AppBar className='appbar' style={{height:50,backgroundColor:"rgb(122,122,122)",zIndex:2000}} position="fixed">
         <Toolbar style={{height:50}}>
           {
             !show
@@ -192,7 +192,7 @@ https://templatemo.com/tm-531-reflux
             <DrawerContent className='main-drawer'>
             <div className="responsive-nav">
     <i className="fa fa-bars" id="menu-toggl" />
-    <div id="menu" style={{borderRight:'7px solid #8c363e',backgroundColor:'rgba(101,101,106)', }} className="menu side-menu">
+    <div id="menu" style={{borderRight:'7px solid #8c363e',backgroundColor:'rgba(122,122,122)', }} className="menu side-menu">
       
       <div className='side-menu-body'>
       <div style={{}} className="containe side-menu-items">
