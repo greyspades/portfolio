@@ -74,43 +74,25 @@ export default function Home() {
   },[])
 
   const workScroll = () => {
+    workRef.current.scrollIntoView()
+    // if(mobile){
+    //    toggleDrawer()
     
-    if(mobile){
-       toggleDrawer()
-      workRef.current.scrollIntoView()
-    }
-    else {
-      workRef.current.scrollIntoView()
-    }
+    // }
+    // else {
+    //   workRef.current.scrollIntoView()
+    // }
     
   }  
   const serviceScroll = () => {
-    if(mobile){
-      toggleDrawer()
-     serviceRef.current.scrollIntoView()
-   }
-   else {
-     serviceRef.current.scrollIntoView()
-   }
+    serviceRef.current.scrollIntoView()
   }  
   const contactScroll = () => {
-    if(mobile){
-      toggleDrawer()
-     contactRef.current.scrollIntoView()
-   }
-   else {
-     contactRef.current.scrollIntoView()
-   }
+    contactRef.current.scrollIntoView()
     
   }  
   const aboutScroll = ()=> {
-    if(mobile){
-      toggleDrawer()
-     aboutRef.current.scrollIntoView()
-   }
-   else {
-     aboutRef.current.scrollIntoView()
-   }
+    aboutRef.current.scrollIntoView()
   }  
   
 
@@ -147,9 +129,9 @@ https://templatemo.com/tm-531-reflux
 
 <div style={{}} className='containe main-appba '>
   <Box  sx={{ }}>
-      <AppBar className='appbar' style={{height:50,backgroundColor:"rgb(122,122,122)",zIndex:2000}} position="fixed">
-        <Toolbar style={{height:50}}>
-          {
+      <AppBar className='appbar' style={{backgroundColor:"rgb(122,122,122)",zIndex:2000}} position="fixed">
+        <Toolbar className='appbar-bg' style={{}}>
+          {/* {
             !show
             ?
             <IconButton
@@ -164,15 +146,33 @@ https://templatemo.com/tm-531-reflux
           </IconButton>
           :
           null
-          }
+          } */}
           
           {/* <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Chidera C.Nadoma
           </Typography> */}
-          <p className='app-bar-title' style={{display:'flex'}}>
+          {/* <p className='app-bar-title' style={{display:'flex'}}>
             Chidera C. Nadoma
+          </p> */}
+          <span style={{display:'flex',marginLeft:"auto"}}>
+          
+          <Button onClick={serviceScroll}>
+          <p style={{}} className='nav-link'>
+            My skills
           </p>
-          <IconButton style={{marginLeft:'auto'}} onClick={contactScroll} color="inherit">
+          </Button>
+          <Button onClick={workScroll}>
+          <p style={{}} className='nav-link'>
+            My work
+          </p>
+          </Button>
+          <Button onClick={contactScroll}>
+          <p style={{}} className='nav-link'>
+            Contact me
+          </p>
+          </Button>
+          </span>
+          <IconButton style={{}} onClick={contactScroll} color="inherit">
             <Github style={{width:30,height:30,color:'white',marginTop:-10}} />
             </IconButton>
         </Toolbar>
@@ -180,64 +180,12 @@ https://templatemo.com/tm-531-reflux
     </Box>
   </div>
 
-<div>
-<Drawer
-            anchor={'left'}
-            //dismissible
-            open={show}
-            variant='persistent'
-          >
-            {/* <Sidebar work={props.work} service={props.service} contact={props.contact} /> */}
 
-            <DrawerContent className='main-drawer'>
-            <div className="responsive-nav">
-    <i className="fa fa-bars" id="menu-toggl" />
-    <div id="menu" style={{borderRight:'7px solid #8c363e',backgroundColor:'rgba(122,122,122)', }} className="menu side-menu">
-      
-      <div className='side-menu-body'>
-      <div style={{}} className="containe side-menu-items">
-        <Grid container justify='center' direction='row'>
-
-        {/* <Grid xs={12} md={4} item style={{}} className="author-content">
-          <h4 style={{fontSize:35}}>Grey</h4>
-          <span>Fullstack Developer</span>
-        </Grid> */}
-
-        <Grid xs={12} md={8} justify='flex-end' container style={{}}>
-          <div className='me-container' style={{}}>
-          <Image className='me' src={me} width={280} height={280} layout='fixed' />
-          </div>
-        </Grid>
-        </Grid>
-        <nav style={{zIndex:1200,marginTop:-40}} className="main-nav" role="navigation">
-          <ul className="main-menu">
-            <li><a onClick={aboutScroll} href="#section1">About me</a></li>
-            <li><a onClick={serviceScroll} href="#section2">What i’m good at</a></li>
-            <li><a onClick={workScroll} href="#section3">My work</a></li>
-            <li><a onClick={contactScroll} href="#section4">Contact me</a></li>
-          </ul>
-          
-        </nav>
-          
-       
-       
-      </div>
-      <RiveComponent className='side-rive' />
-      </div>
-    </div>
-    
-  </div>
-            </DrawerContent>
-
-          </Drawer>
-</div>
-
- 
 
   <DrawerAppContent className='drawer-app-content'>
   
 
-  <section style={{}} ref={aboutRef} className='section front'>
+  <section style={{}} ref={aboutRef} className='sectio front'>
     {/* <Button onClick={()=>console.log(mobile)}>
       click
     </Button> */}
@@ -248,12 +196,16 @@ https://templatemo.com/tm-531-reflux
     <Services />
   </section>
   
-  <section ref={workRef} className='section' >
+  <section ref={workRef} className='sectio' >
     <Work />
   </section>
   
-  <section ref={contactRef} className="section contact-me">
+  <section ref={contactRef} className="sectio contact-me">
     <Contact />
+  </section>
+
+  <section style={{height:200}} className='footer'>
+    <MyFooter />
   </section>
 
 

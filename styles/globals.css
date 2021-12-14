@@ -62,9 +62,14 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgb
   color: #c62368;
 }
 .service-grid {
-  margin: 100px;
+  /* margin: 50px; */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* border-radius: 15px; */
+  padding-top: 10px;
   /* display: grid;
   place-items: center; */
+  margin-top: 30px;
+  padding: 20px;
 }
 .service-paper {
   box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -135,7 +140,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgb
   /* background-image: url(../public/bg5.jpg); */
   padding: 0px;
   border-radius: 10px;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.7);
 }
 .side-rive {
   height: 200px;
@@ -240,8 +245,10 @@ background-repeat: no-repeat;
   width: 250px;
   height: 340px;
   margin: 20px;
+  
   /* background-color: rgba(43,43,43,0.2); */
   background-color: rgba(122,122,122,0.3);
+  
   z-index: 1000;
   border: 2px solid #c62368;
   /* border-top: 0; */
@@ -268,7 +275,7 @@ background-repeat: no-repeat;
 
 
 .work-header {
-  margin-top: 100px;
+  /* margin-top: 120px; */
 }
 
 
@@ -289,7 +296,7 @@ background-repeat: no-repeat;
 .yin-yang {
   width: 300px;
   height: 300px;
-  margin-top: 80px;
+  margin-top: 110px;
 }
 
 .me-icon {
@@ -315,26 +322,34 @@ background-repeat: no-repeat;
 .main-intro {
   margin-top: -10;
   font-size: 20px;
+  padding: 60px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.appbar-bg {
+  background-image: url(../public//storm.png);
+    width:100%;
+    height: 100%;
+    
 }
 
 .appbar {
-  
+  height: 100px;
   width: 100%;
+  
+    background-color: rgb(87, 69, 88);
 }
 .main-footer {
-  min-width: 500px;
-  height: 80px;
-  background-color: rgb(122,122,122);
-  margin-bottom: -200px;
-  margin-top: 100px;
+  /* min-width: 500px; */
+  /* height: 80px; */
+  /* background-color: rgb(122,122,122); */
+  /* margin-bottom: -200px;
+  margin-top: 100px; */
   border-top: 2px solid #c62368;
+  background-image: url(/public/storm.png);
 
 }
 .footer-container {
-  /* margin-bottom: -100px;
- 
- background-color: rebeccapurple; */
+  background-image: url(/public/storm.png);
 }
 
 .rive-footer {
@@ -373,7 +388,7 @@ background-repeat: no-repeat;
   padding: 0;
   margin-left: -20px;
   
-  width: 300px;
+  width: 320px;
   
 }
 
@@ -381,25 +396,65 @@ background-repeat: no-repeat;
   margin-top: 150px;
 }
 
-.rive-container {
-  margin-bottom: -50px;
-  margin-top: -50px;
-  padding: 0;
-  margin-left: -20px;
-  
-  width: 300px;
+
+.service-container {
+  background-image: url(../public/storm.png);
   
 }
 
-/* .rive-container {
-  margin-bottom: -50px;
-  margin-top: -50px;
-  padding: 0;
-  margin-left: -20px;
+.work-container {
+  background-image: url(../public/storm.png);
   
-  min-width: 300px;
   
-} */
+}
+
+.my-work {
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 30px;
+  border-radius: 14px;
+}
+
+.work-tabs {
+  border: 4px solid #c62368;
+  width: 90%;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.under-wave {
+  margin-top: -60px;
+  margin-bottom: -40px;
+  width: 300px;
+  height: 100px;
+}
+
+.skill-container {
+  /* margin: 50px; */
+  /* padding: 30px; */
+  
+}
+
+.contact {
+  margin-top: 50px;
+  padding: 50px;
+}
+
+.nav-link {
+  font-size: 18;
+}
+.front-container {
+  margin-top: 70px;
+}
+
+.main-header {
+  margin-bottom: -30px;
+  margin-top: 20px;
+  
+  position: relative;
+  
+}
+
 
  /* @media all and (max-width:420px){
   .rive-container {
@@ -429,6 +484,17 @@ background-repeat: no-repeat;
  
  */
 
+ #page-wraper {
+  /* background: url(../../../../public/bg4.jpg) no-repeat center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 
 @media all and (min-width:1400px){
   #page-wraper {
@@ -445,6 +511,33 @@ background-repeat: no-repeat;
 
 
 @media all and (min-width:800px){
+
+  .front-container {
+    margin-top: 100px;
+  }
+
+  .my-work {
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 30px;
+    border-radius: 14px;
+  }
+
+  .work-tabs {
+    border: 4px solid #c62368;
+    width: 70%;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .nav-link {
+    font-size: 20px;
+    margin: 30px;
+  }
+
+  .skill-container {
+    margin: 50px;
+  }
 
   .side-menu-body {
     margin-top: 50px;
@@ -469,6 +562,7 @@ background-repeat: no-repeat;
   .service-heading {
     padding: 0;
     margin-bottom: 0;
+    /* margin-top: -40px; */
   }
 
   .tool-item {
@@ -486,7 +580,8 @@ background-repeat: no-repeat;
     /* background-image: url(../public/bg5.jpg); */
     padding: 30px;
     border-radius: 10px;
-    background-color: rgba(0,0,0,0.2);
+    margin: 20px;
+    width:60% ;
   }
 
   .my-service {
@@ -494,11 +589,10 @@ background-repeat: no-repeat;
   }
 
   .front {
-    /* margin-bottom: -200px;
-    background-color: #8c363e; */
-    /* margin-top: 70px; */
-    margin-bottom: -200px;
     margin-top: 50px;
+    
+    padding: 30px;
+    background:linear-gradient(rgba(0, 0, 0, 0.8),grey)
     
   }
 
@@ -514,25 +608,29 @@ background-repeat: no-repeat;
   }
 
   .main-footer {
-    min-width: 1200px;
+    /* min-width: 1200px; */
     height: 100px;
-    background-color: rgb(101,101,106);
-    margin-bottom: -200px;
-    margin-top: 100px;
-    border-top: 2px solid  ;
-    margin-left: -50px;
+    /* background-color: rgb(101,101,106); */
+    
+    /* margin-bottom: -200px;
+    margin-top: 100px; */
+   
+    /* margin-left: -50px; */
     /* margin-left: -90px; */
     border-top: 2px solid #c62368;
   }
 
   .front {
+    margin-top: 10px;
     /* margin-bottom: -300px; */
     /* margin-top: -300px; */
   }
 
   .appbar {
     /* margin-left: 270px; */
-    width: 80%;
+    width: 100%;
+    /* background-image: url(../public//storm.png);
+    background-repeat: no-repeat; */
   }
 
   .main-intro {
@@ -549,7 +647,7 @@ background-repeat: no-repeat;
     position: absolute;
   }
   .main-header {
-    margin-bottom: -100px;
+    margin-bottom: 0;
     margin-top: 100px;
     
     position: relative;
@@ -580,9 +678,10 @@ background-repeat: no-repeat;
   }
 
   .yin-yang {
-    margin-left: -150px;
-    width: 400px;
-    height: 400px;
+    margin-left: 0;
+    width: 420px;
+    height: 420px;
+    margin-top: 0;
   }
 
   .design-grid {
@@ -624,7 +723,9 @@ background-repeat: no-repeat;
     padding: 0;
     margin-left: -20px;
     
-    width: 415px;
+    width: 370px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 
   .service-item {

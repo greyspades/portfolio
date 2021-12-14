@@ -37,10 +37,11 @@ export default function MyFooter() {
 
 
     return (
-        <Grid className='footer-container container'  container justifyContent='center'>
+        <Grid className='footer-container containe'  container justifyContent='center'>
 
-            <Grid className='main-footer' justifyContent='center' container>
-                   <div className='footer-talk'>
+            <Grid style={{backgroundColor:'rgb(122,122,122)'}} className='main-footer work-containe' justifyContent='center' container>
+                  <div className=''>
+                  <div className='footer-talk'>
                         <div>
                         <p >
                         Developed by Grey
@@ -52,6 +53,7 @@ export default function MyFooter() {
                             </p>
                         </div>
                    </div>
+                  </div>
             </Grid>
             
             {/* <Footer
