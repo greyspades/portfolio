@@ -105,7 +105,7 @@ export default function FullWidthTabs() {
           className='my-work'
         >
           <TabPanel value={value} index={0} dir={theme.direction}>
-            <Grid  style={{padding:30}} spacing={5} container direction='row' justifyContent='center'>
+            <Grid  style={{}} spacing={5} container direction='row' justifyContent='center'>
               <Grid style={{}} xs={12} md={4} justifyContent='center' container>
                 <div style={{}} className='service-paper work-paper' >
                 <Grid container justifyContent='center'>

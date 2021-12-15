@@ -188,15 +188,15 @@ const WebRive = (props) => {
               Cross-platform mobile applications for android and IOS devices optimized for performance and scalability.
             </p> */}
               </div>
-              <div style={{}} className='rive-container' >
+            
               {/* <RiveComponent
               
               // onMouseEnter={() => rive && rive.play()}
               // onMouseLeave={() => rive && rive.pause()}
             /> */}
 
-                <RiveComponent />
-              </div>
+                <RiveComponent className='rive-container' />
+            
           </div>
         </Grid>
     )
