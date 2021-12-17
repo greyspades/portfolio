@@ -18,10 +18,10 @@ const Contact = () => {
         done:false
     })
     return (
-        <div style={{marginTop:50}} className='work-container '>
-            <div className='contact' style={{backgroundColor:'rgba(0,0,0,0.7)'}}>
+        <div style={{}} className='contact-container '>
+            <div className='contact' style={{backgroundColor:'rgba(0,0,0,0.7)',}}>
                 
-            <h2 className='' style={{textAlign:'center',color:'white'}}>
+            <h2 className='contact-header' style={{textAlign:'center',color:'white'}}>
                 Contact me
             </h2>
 

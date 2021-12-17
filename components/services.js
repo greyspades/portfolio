@@ -77,7 +77,8 @@ function Services(props) {
 
       </Grid>
      </Fade>
-      <Grid style={{zIndex:0}} direction='row'  container justify='center'>
+
+      <Grid className='tools-container' style={{zIndex:0}} direction='row'  container justify='center'>
           <Grid style={{}}  xs={12} md={6} direction='row' container justify='center'>
 
             <Fade left>

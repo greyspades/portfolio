@@ -29,11 +29,11 @@ const Front = () => {
 
               </Grid>
 
-              <Grid container justifyContent='center' xs={12} md={6}>
+              <Grid className='front-intro' container justifyContent='center' xs={12} md={6}>
                   <Fade>
                   <div className='main-header'>
                   <h1  style={{textAlign:'center',color:'white',fontSize:40}}>
-                Hey i'm Dera, 
+                Hi i'm Dera, 
               </h1>
             
               <Rive className='under-wave' src='/wave.riv' />
@@ -41,7 +41,7 @@ const Front = () => {
               <p className='main-intro' style={{textAlign:'center',color:'white'}}>
                 A full stack developer and UI/UX designer with a nack for 
                 performant and scalable software solutions.<br/>
-                I am goal oriented and an avid learner with a nack for learning and creating something new.
+                I am detail oriented and an avid learner with a nack for learning and creating something new.
               </p>
                   </Fade>
               

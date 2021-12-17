@@ -92,7 +92,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgb
   z-index: 1000;
   /* background-color: rgba(250, 250, 250, 0.1); */
   /* background-color: rgba(122,122,122,0.3); */
-  background-color: rgba(122,122,122,0.7);
+  background-color: rgba(0,0,0,0.5);
   transition: all 0.5s;
 }
 .web-icon {
@@ -277,7 +277,7 @@ background-repeat: no-repeat;
 
 
 .work-header {
-  margin-bottom: -30px;
+  /* margin-top: 70px; */
 
 }
 
@@ -299,7 +299,7 @@ background-repeat: no-repeat;
 .yin-yang {
   width: 300px;
   height: 300px;
-  margin-top: 110px;
+  margin-top: 100px;
 }
 
 .me-icon {
@@ -320,14 +320,15 @@ background-repeat: no-repeat;
   border-radius: 20px;
   border: 0;
   margin-top: -15px;
-  
 }
+
 .main-intro {
-  margin-top: -10;
+  margin-top: 40px;
   font-size: 20px;
-  padding: 60px;
+  padding: 30px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 .appbar-bg {
   background-image: url(../public//storm.png);
     width:100%;
@@ -401,18 +402,24 @@ background-repeat: no-repeat;
 
 .service-con {
   background-color: grey;
+  padding-bottom: 60px;
 }
 
 
 .service-container {
   background-image: url(../public/storm.png);
   
+  
 }
 
 .work-container {
   background-image: url(../public/storm.png);
+  margin-top: 30px;
   
-  
+}
+.contact-container {
+  background-image: url(../public/storm.png);
+  margin-top: 30px;
 }
 
 .my-work {
@@ -431,7 +438,7 @@ background-repeat: no-repeat;
 }
 
 .under-wave {
-  margin-top: -60px;
+  margin-top: -75px;
   margin-bottom: -40px;
   width: 300px;
   height: 100px;
@@ -444,7 +451,7 @@ background-repeat: no-repeat;
 }
 
 .contact {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   padding-top: 50px;
   padding-bottom: 50px;
   
@@ -455,6 +462,7 @@ background-repeat: no-repeat;
 }
 .front-container {
   margin-top: 70px;
+  
 }
 
 .main-header {
@@ -464,7 +472,30 @@ background-repeat: no-repeat;
   position: relative;
   
 }
+.contact-header {
+  margin-top: 60px;
+}
+.side-list {
+  margin-top: 100px;
+}
+.drawer-container {
+  background-image: url(../public/storm.png);
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  height: 100%;
+  background-color:rgba(0,0,0,1);
+}
 
+.git-icon {
+  margin-left: auto;
+}
+.front {
+  margin-top: -20px;
+  
+  padding: 5px;
+  background:-webkit-linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.6) 80%)
+  
+}
 
  
 /* @media all and (max-width:380px){
@@ -510,13 +541,24 @@ background-repeat: no-repeat;
 
 
 @media all and (min-width:800px){
+  
+  .git-icon {
+    margin-left:0;
+  }
+  .front-intro {
+    margin-top: -70px;
+  }
+
+  .tools-container {
+    margin-top: 60px;
+  }
 
   .work-header {
     margin-bottom:0;
-  
+    /* margin-top: 100px; */
   }
   .contact {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     padding: 50px;
   }
   .front-container {
@@ -597,10 +639,10 @@ background-repeat: no-repeat;
   }
 
   .front {
-    margin-top: 50px;
+    margin-top: 0;
     
     padding: 30px;
-    background:linear-gradient(rgba(0, 0, 0, 0.8),grey)
+    background:-webkit-linear-gradient()
     
   }
 
@@ -628,11 +670,7 @@ background-repeat: no-repeat;
     border-top: 2px solid #c62368;
   }
 
-  .front {
-    margin-top: 10px;
-    /* margin-bottom: -300px; */
-    /* margin-top: -300px; */
-  }
+  
 
   .appbar {
     /* margin-left: 270px; */
@@ -642,7 +680,8 @@ background-repeat: no-repeat;
   }
 
   .main-intro {
-    margin-top: 0px;
+    margin-top: -90px;
+    padding: 60px;
   }
 
   .hr {
@@ -739,7 +778,7 @@ background-repeat: no-repeat;
   .service-item {
     margin-bottom: 10px;
     padding: 30px;
-    background-image: url(../public/storm.png);
+    /* background-image: url(../public/storm.png); */
     /* background-color: rgba(250, 250, 250, 0.1); */
     transition: all 0.5s;
 }

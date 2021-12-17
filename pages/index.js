@@ -20,7 +20,7 @@ import Contact from '../components/contact.js'
 import {useRive} from 'rive-react'
 import me from '../public/me2.png'
 import Image from 'next/image'
-import { Drawer} from '@mui/material'
+import { Drawer,List,ListItem} from '@mui/material'
 
 import  {
   
@@ -57,14 +57,14 @@ export default function Home() {
     //console.log(JSON.stringify(slug))
     //console.log(name)
     if(width<500){
-      setShow(false)
+      //setShow(false)
       setMobile(true)
       
       console.log('mobile view')
      
     }
     else if(width>500){
-        setShow(true)
+        //setShow(true)
         setMobile(false)
         
         console.log('desktop view')
@@ -74,21 +74,36 @@ export default function Home() {
   },[])
 
   const workScroll = () => {
-    workRef.current.scrollIntoView()
-    // if(mobile){
-    //    toggleDrawer()
-    
-    // }
-    // else {
-    //   workRef.current.scrollIntoView()
-    // }
+    //workRef.current.scrollIntoView()
+    if(mobile){
+       toggleDrawer()
+       workRef.current.scrollIntoView()
+    }
+    else {
+      workRef.current.scrollIntoView()
+    }
     
   }  
   const serviceScroll = () => {
-    serviceRef.current.scrollIntoView()
+    //serviceRef.current.scrollIntoView()
+    if(mobile){
+      toggleDrawer()
+      serviceRef.current.scrollIntoView()
+   
+   }
+   else {
+     workRef.current.scrollIntoView()
+   }
   }  
   const contactScroll = () => {
-    contactRef.current.scrollIntoView()
+    //contactRef.current.scrollIntoView()
+    if(mobile){
+      toggleDrawer()
+      contactRef.current.scrollIntoView()
+   }
+   else {
+     workRef.current.scrollIntoView()
+   }
     
   }  
   const aboutScroll = ()=> {
@@ -131,8 +146,8 @@ https://templatemo.com/tm-531-reflux
   <Box  sx={{ }}>
       <AppBar className='appbar' style={{backgroundColor:"rgb(122,122,122)",zIndex:2000}} position="fixed">
         <Toolbar className='appbar-bg' style={{}}>
-          {/* {
-            !show
+          {
+            mobile
             ?
             <IconButton
             size="large"
@@ -146,7 +161,7 @@ https://templatemo.com/tm-531-reflux
           </IconButton>
           :
           null
-          } */}
+          }
           
           {/* <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Chidera C.Nadoma
@@ -154,7 +169,17 @@ https://templatemo.com/tm-531-reflux
           {/* <p className='app-bar-title' style={{display:'flex'}}>
             Chidera C. Nadoma
           </p> */}
-          <span style={{display:'flex',marginLeft:"auto"}}>
+          {
+            !mobile ?
+            <h2>
+              Chidera C. Nadoma
+            </h2>
+            :
+            null
+          }
+            {
+              !mobile ?
+              <span style={{display:'flex',marginLeft:"auto"}}>
           
           <Button onClick={serviceScroll}>
           <p style={{}} className='nav-link'>
@@ -172,13 +197,53 @@ https://templatemo.com/tm-531-reflux
           </p>
           </Button>
           </span>
-          <IconButton style={{}} onClick={contactScroll} color="inherit">
+          :
+          <h4>
+            Chidera C Nadoma
+          </h4>
+            }
+          <a className='git-icon' style={{}} href='https://github.com/greyspades' color="inherit">
             <Github style={{width:30,height:30,color:'white',marginTop:-10}} />
-            </IconButton>
+            </a>
         </Toolbar>
       </AppBar>
     </Box>
   </div>
+
+  <Drawer
+      anchor={'left'}
+      open={show}
+      //onClose={toggleDrawer(anchor, false)}
+    >
+      <Grid className='drawer-container'>
+          <List className='side-list'>
+            <ListItem>
+              <Button onClick={serviceScroll}>
+              <p style={{color:'white'}}>
+              My skills
+              </p>
+              </Button>
+            </ListItem>
+
+            <ListItem>
+              <Button onClick={workScroll}>
+              <p style={{color:'white'}}>
+              My Services
+              </p>
+              </Button>
+            </ListItem>
+
+            <ListItem>
+              <Button onClick={contactScroll}>
+              <p style={{color:'white'}}>
+              Contact Me
+              </p>
+              </Button>
+            </ListItem>
+          </List>
+      </Grid>
+     
+    </Drawer>
 
 
 
@@ -192,7 +257,7 @@ https://templatemo.com/tm-531-reflux
     <Front />
   </section>
 
-  <section ref={serviceRef}>
+  <section style={{}} ref={serviceRef}>
     <Services />
   </section>
   

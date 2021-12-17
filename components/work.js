@@ -69,14 +69,17 @@ export default function FullWidthTabs() {
 
   return (
     <Box className='work-container section' sx={{}}>
-      <h2 className='work-header section-heading' style={{textAlign:'center'}}>
-        My Work
-      </h2>
+      
       {/* <div style={{textAlign:'center'}}>
         <h4 style={{}}>
           What i have created
         </h4>
       </div> */}
+      <Grid className='work-header section-heading' container justifyContent='center'>
+      <h2  style={{textAlign:'center'}}>
+        My Work
+      </h2>
+      </Grid>
         <Grid container justifyContent='center'>
         <Tabs
        className='work-tabs'

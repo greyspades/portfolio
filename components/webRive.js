@@ -132,8 +132,8 @@ const WebRive = (props) => {
                       <div 
            style={{position:'relative'}}
            onMouseEnter={show}
-            onMouseLeave={stop}
-          className="service-item service-paper">
+           onMouseLeave={stop}
+           className="service-item service-paper">
             
           <Grid container direction='row'>
             <Grid item xs={3} md={3}>
