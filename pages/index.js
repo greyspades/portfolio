@@ -228,7 +228,7 @@ https://templatemo.com/tm-531-reflux
             <ListItem>
               <Button onClick={workScroll}>
               <p style={{color:'white'}}>
-              My Services
+              My work
               </p>
               </Button>
             </ListItem>
