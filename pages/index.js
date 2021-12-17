@@ -226,6 +226,14 @@ https://templatemo.com/tm-531-reflux
             </ListItem>
 
             <ListItem>
+              <Button onClick={serviceScroll}>
+              <p style={{color:'white'}}>
+              My skills
+              </p>
+              </Button>
+            </ListItem>
+
+            <ListItem>
               <Button onClick={workScroll}>
               <p style={{color:'white'}}>
               My work

@@ -39,7 +39,7 @@ const Front = () => {
               <Rive className='under-wave' src='/wave.riv' />
                   </div>
               <p className='main-intro' style={{textAlign:'center',color:'white'}}>
-                A full stack developer and UI/UX designer with a nack for 
+                A full stack developer and UI/UX designer interested
                 performant and scalable software solutions.<br/>
                 I am detail oriented and an avid learner with a nack for learning and creating something new.
               </p>
