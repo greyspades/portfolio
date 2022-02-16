@@ -162,7 +162,7 @@ const DesignRive = (props) => {
               </motion.div>
                 </Grid>
 
-                <Grid item xs={12} md={12}>
+                {/* <Grid item xs={12} md={12}>
                 <motion.div
                  variants={variants} initial={'hidden'} 
                  animate={controls1}
@@ -171,13 +171,13 @@ const DesignRive = (props) => {
                     Custom Design Models and Animations
                   </p>
               </motion.div>
-                </Grid>
+                </Grid> */}
               
             </Grid>
           </Grid>
               
               <div className='service-talk'>
-              <h4>
+              <h4 className='service-sub-heading'>
               UI/UX Design
             </h4>
             {/* <p>

@@ -151,7 +151,7 @@ const MobileRive = (props) => {
               </motion.div>
                 </Grid>
 
-                <Grid item xs={12} md={12}>
+                {/* <Grid item xs={12} md={12}>
                 <motion.div
                  variants={variants} initial={'hidden'} 
                  animate={controls1}
@@ -160,7 +160,7 @@ const MobileRive = (props) => {
                   Mobile app porting
                   </p>
               </motion.div>
-                </Grid>
+                </Grid> */}
 
                 <Grid item xs={12} md={12}>
                 <motion.div
@@ -177,7 +177,7 @@ const MobileRive = (props) => {
           </Grid>
               
               <div className='service-talk'>
-              <h4>
+              <h4 className='service-sub-heading'>
               Mobile Development
             </h4>
             {/* <p>

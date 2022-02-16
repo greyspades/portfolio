@@ -166,7 +166,7 @@ const WebRive = (props) => {
               </motion.div>
                 </Grid>
 
-                <Grid item xs={12} md={12}>
+                {/* <Grid item xs={12} md={12}>
                 <motion.div
                  variants={variants} initial={'hidden'} 
                  animate={controls1}
@@ -175,13 +175,13 @@ const WebRive = (props) => {
                     E-commerce Solutions
                   </p>
               </motion.div>
-                </Grid>
+                </Grid> */}
               
             </Grid>
           </Grid>
               
               <div className='service-talk'>
-              <h4>
+              <h4 className='service-sub-heading'>
               Web Development
             </h4>
             {/* <p>

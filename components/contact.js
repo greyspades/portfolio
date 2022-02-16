@@ -71,7 +71,7 @@ const Contact = () => {
             type='text'
             value={values.sender}
             onChange={handleChange('sender')}
-            startAdornment={<Person style={{color:'#c62368'}} />}
+            startAdornment={<Person style={{color:'#c62368',width:20,height:20,margin:10}} />}
         />
                 </Grid>
 
@@ -83,12 +83,13 @@ const Contact = () => {
             type='email'
             value={values.email}
             onChange={handleChange('email')}
-            startAdornment={<Person style={{color:'#c62368'}} />}
+            startAdornment={<Mail  style={{color:'#c62368',width:20,height:20,margin:10}} />}
         />
                 </Grid>
 
                 <Grid container justifyContent='center'>
                 <TextField
+                
             className='mail-input'
             placeholder='message'
             multiline={true}

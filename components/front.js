@@ -33,13 +33,13 @@ const Front = () => {
                   <Fade>
                   <div className='main-header'>
                   <h1  style={{textAlign:'center',color:'white',fontSize:40}}>
-                Hi i'm Dera, 
+                Hi. I'm Dera, 
               </h1>
             
               <Rive className='under-wave' src='/wave.riv' />
                   </div>
               <p className='main-intro' style={{textAlign:'center',color:'white'}}>
-                A full stack developer and UI/UX designer interested
+                A full stack developer and UI/UX designer interested in
                 performant and scalable software solutions.<br/>
                 I am detail oriented and an avid learner with a nack for learning and creating something new.
               </p>
