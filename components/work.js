@@ -350,7 +350,7 @@ export default function FullWidthTabs() {
                   </Grid>
   
                   <Grid style={{paddingRight:20,marginTop:-10}} container justifyContent='flex-end'>
-                        <a style={{fontSize:14}} href='http://winstertradeinvestment.com/dashboard'>
+                        <a style={{fontSize:14}} href='http://winstertradeinvestment.com/dashboard/peterpan'>
                         <Button style={{color:'white',backgroundColor:"#c62368",height:23,fontSize:14,paddingTop:5,borderRadius:20}}>
                            <p style={{fontSize:12}}>
                              visit Page
