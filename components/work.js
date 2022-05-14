@@ -109,6 +109,8 @@ export default function FullWidthTabs() {
         >
           <TabPanel value={value} index={0} dir={theme.direction}>
             <Grid  style={{}} spacing={5} container direction='row' justifyContent='center'>
+
+
               <Grid style={{}} xs={12} md={4} justifyContent='center' container>
                 <div style={{}} className='service-paper work-paper' >
                 <Grid container justifyContent='center'>
@@ -200,9 +202,99 @@ export default function FullWidthTabs() {
   
                 </div>
               </Grid>
+
+  
+              <Grid style={{}} xs={12} md={4} justifyContent='center' container>
+                <div style={{}} className='service-paper work-paper' >
+                <Grid container justifyContent='center'>
+                        <motion.div style={{borderRadius:10}} whileHover={{scale:1.5}}  className='work-imag'>
+                        <Image className='work-image' width={300} height={150} src='/sneakify.png' layout='intrinsic' />
+                        </motion.div>
+                  </Grid>
   
   
+                <div className='work-card-body' >
+                <div style={{padding:10,marginTop:-20}}>
+                <p style={{fontSize:14}}>
+                  Sneakers Ecommerce store
+                </p>
+                <Divider variant='fullWidth' style={{height:2,backgroundColor:'rgba(255,255,255,0.2)',marginTop:-12,marginBottom:30,marginRight:-10,marginLeft:-10}} />
+                </div>
   
+                <Grid style={{marginTop:-30}} container direction='row'>
+                  <Grid container alignContent='center' xs={3} md={3} style={{margin:10}} >
+                        <Code style={{color:'#c62368'}} />     
+                  </Grid>
+  
+                  <Grid xs={9} md={9} style={{paddingLeft:0,paddingRight:0,marginTop:-50,marginLeft:52}} direction='row' container justifyContent='flex-end'>
+                        <Grid item xs={3} md={3}>
+                        <div className='work-chip' container justifyContent='center' alignContent='center' >
+                          <Image src='/react.png' height={20} width={20} layout='intrinsic' />
+                        </div>
+                        </Grid>
+  
+                        <Grid item xs={3} md={3}>
+                        <div className='work-chip' container justifyContent='center' alignContent='center' >
+                          <Image src='/next.png' height={20} width={20} layout='intrinsic' />
+                        </div>
+                        </Grid>
+  
+                        <Grid item xs={3} md={3}>
+                        <div className='work-chip' container justifyContent='center' alignContent='center' >
+                          <Image src='/node.png' height={20} width={20} layout='intrinsic' />
+                        </div>
+                        </Grid>
+  
+                        <Grid item xs={3} md={3}>
+                        <div className='work-chip' container justifyContent='center' alignContent='center' >
+                          <Image src='/mongo.png' height={20} width={20} layout='intrinsic' />
+                        </div>
+                        </Grid>
+                      </Grid>
+                </Grid>
+  
+                <Divider variant='fullWidth' style={{height:2,backgroundColor:'rgba(255,255,255,0.2)',marginTop:-3}} />
+                
+                <Grid style={{marginTop:10}} container direction='row'>
+                  <Grid container xs={3} md={3} style={{margin:10}} >
+                        <Link style={{color:' #c62368',marginBottom:-25}} />
+                        
+                  </Grid>
+  
+                  <Grid style={{paddingRight:20,marginTop:-10}} container justifyContent='flex-end'>
+                        <a style={{fontSize:14}} href='https://sneakify-greyspades.vercel.app/home'>
+                        <Button style={{color:'white',backgroundColor:"#c62368",height:23,fontSize:14,paddingTop:5,borderRadius:20}}>
+                           <p style={{fontSize:12}}>
+                             visit Page
+                           </p>
+                          </Button>
+                        </a>
+                  </Grid>
+                </Grid>
+  
+                <Divider variant='fullWidth' style={{height:2,backgroundColor:'rgba(255,255,255,0.2)',marginTop:4}} />
+  
+                <Grid container direction='row'>
+                  <Grid container xs={3} md={3} style={{margin:10}} >
+                        <Github style={{color:' #c62368',marginBottom:-35,marginTop:10}} />
+                        
+                  </Grid>
+                 
+  
+                  <Grid style={{paddingRight:20,}} container justifyContent='flex-end'>
+                  <a style={{fontSize:14}} href='https://github.com/greyspades/sneakify'>
+                          <Button style={{color:'white',backgroundColor:"#c62368",height:23,fontSize:14,paddingTop:5,borderRadius:20}}>
+                           <p style={{fontSize:12}}>
+                             visit Repo
+                           </p>
+                          </Button>
+                          </a>
+                  </Grid>
+                </Grid>
+                </div>
+  
+                </div>
+              </Grid>
   
   
               <Grid style={{}} xs={12} md={4} justifyContent='center' container>

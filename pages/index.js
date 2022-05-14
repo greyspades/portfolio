@@ -92,7 +92,7 @@ export default function Home() {
    
    }
    else {
-     workRef.current.scrollIntoView()
+     serviceRef.current.scrollIntoView()
    }
   }  
   const contactScroll = () => {
@@ -102,7 +102,7 @@ export default function Home() {
       contactRef.current.scrollIntoView()
    }
    else {
-     workRef.current.scrollIntoView()
+     contactRef.current.scrollIntoView()
    }
     
   }  
